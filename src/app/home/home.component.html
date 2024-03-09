@@ -1,0 +1,88 @@
+<div class="content">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header"><h5 class="title">Merhabalar</h5></div>
+      <div class="card-body">
+        <form [formGroup]="addForm">
+          <div class="mb-3">
+            <label for="productName" class="form-label">İsminiz:</label>
+            <div class="form-group">
+              <input
+                type="text"
+                id="userName"
+                formControlName="userName"
+                placeholder="İsminizi Giriniz."
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            @for (item of questions; track $index) {
+              <div class="form-group">
+                <div formGroupName="answers">
+              @if (item.type==0 ) {
+                <label for="categoryId" class="form-label">{{item.question}}</label><br>
+                
+                  @for (option of item.options; track $index) {
+                    
+                    <input
+                    type="radio"
+                    id="answerId{{item.id}}"
+                    formControlName="answerId{{item.id}}"
+                    placeholder="Category ID."
+                    class="form-check-input"
+                    value="{{option.option1}}"
+                  />{{option.option1}}<br>
+                  
+                  <input
+                    type="radio"
+                    id="answerId{{item.id}}"
+                    formControlName="answerId{{item.id}}"
+                    placeholder="Category ID."
+                    class="form-check-input"
+                    value="{{option.option2}}"
+                  />{{option.option2}}<br>
+
+                  <input
+                    type="radio"
+                    id="answerId{{item.id}}"
+                    formControlName="answerId{{item.id}}"
+                    placeholder="Category ID."
+                    class="form-check-input"
+                    value="{{option.option3}}"/>
+                    {{option.option3}}<br>
+                  
+                  }
+                
+                  
+                
+              }
+              @else if (item.type==1) {
+                <label for="categoryId" class="form-label">{{item.question}}</label>
+                <input
+                type="text"
+                id="answerId{{item.id}}"
+                formControlName="answerId{{item.id}}"
+                placeholder="Ürün Giriniz."
+                class="form-control"
+              />
+
+              }
+                </div>
+              </div>
+            }
+          
+            
+            
+          </div>
+          
+        </form>
+      </div>
+      <div class="card-footer">
+        <button
+          type="submit"
+          class="btn btn-fill btn-primary" (click)="submit()">Kaydet</button>
+      </div>
+    </div>
+  </div>
+</div>
