@@ -1,20 +1,11 @@
 <div class="row">
-    <div class="col-md-3">
-        <app-conclusion></app-conclusion>
-    </div>
+    
     <div class="col-md-9">
         @for (item of answers; track $index) {
-            @for (answer of item.answers; track $index) {
-                @if (item.userName== "Sinan") {
-                    {{item.userName}}:<br>
-                {{answer.answerId1}}<br>
-                {{answer.answerId2}}<br>
-                {{answer.answerId3}}<br>
-                }
-                
-                
-                
-            }
+            {{item.userName}}<br>
+            
+                {{item.answers[0].answerId1}}
+                     
         }
     </div>
         
