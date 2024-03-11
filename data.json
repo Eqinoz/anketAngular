@@ -1,0 +1,121 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": "2",
+      "title": "json-server 2",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "id": "2",
+      "body": "some comment 2",
+      "postId": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "question": "Yazılım Projelerinizde MSSQL Kullanma Sıklığınız Nedir.",
+      "author": "typicode",
+      "type": 0,
+      "options": [
+        {
+          "option1": "Kullanmam",
+          "option2": "Ara Sıra",
+          "option3": "Tüm Projelerimde Kullanırım"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "question": "Frontend Geliştirme de Hangi Framework ü tercih edersiniz.",
+      "author": "typicode",
+      "type": 0,
+      "options": [
+        {
+          "option1": "Angular",
+          "option2": "React",
+          "option3": "Vue"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "question": ".net 8 Hakkında görüş ve önerileriniz.",
+      "author": "typicode",
+      "type": 1
+    }
+  ],
+  "answers": [
+    {
+      "id": "1",
+      "userName": "Sinan",
+      "answers": [
+        {
+          "answerId1": "Kullanmam",
+          "answerId2": "React",
+          "answerId3": "Güzel bir dil."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "userName": "Ali",
+      "answers": [
+        {
+          "answerId1": "Sık Kullanırım",
+          "answerId2": "React",
+          "answerId3": "Güzel bir dil."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "userName": "Veli",
+      "answers":[ {
+        "answerId1": "Kullanmam",
+        "answerId2": "React",
+        "answerId3": "Güzel bir dil."
+      }]
+    },
+    {
+      "id": "5",
+      "userName": "Bayram",
+      "answers":[ {
+        "answerId1": "Tüm Projelerimde Kullanırım",
+        "answerId2": "Angular",
+        "answerId3": ".Net'in Zirvesi"
+      }]
+    },
+    {
+      "id": "46bc",
+      "userName": "Umut",
+      "answers": [{
+        "answerId1": "Kullanmam",
+        "answerId2": "React",
+        "answerId3": "Very Good"
+      }]
+    },
+    {
+      "id": "6082",
+      "userName": "Devrim",
+      "answers":[ {
+        "answerId1": "Tüm Projelerimde Kullanırım",
+        "answerId2": "Vue",
+        "answerId3": "Very Good"
+      }]
+    }
+     
+  ]
+}
