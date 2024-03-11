@@ -2,7 +2,6 @@
   "name": "anket",
   "version": "0.0.0",
   "scripts": {
-    "deploy": "ng build -sm -ec -bh /anketAngular/ & ngh –no-silent",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
