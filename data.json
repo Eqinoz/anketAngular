@@ -51,8 +51,8 @@
       "answers": [
         {
           "answerId1": "Sık Kullanırım",
-          "answerId2": "React",
-          "answerId3": "Güzel bir dil."
+          "answerId2": "Vue",
+          "answerId3": "Gelişmesi Gerekir."
         }
       ]
     },
@@ -61,7 +61,7 @@
       "userName": "Veli",
       "answers":[ {
         "answerId1": "Kullanmam",
-        "answerId2": "React",
+        "answerId2": "Angular",
         "answerId3": "Güzel bir dil."
       }]
     },
