@@ -3,8 +3,13 @@
     <div class="col-md-9">
         @for (item of answers; track $index) {
             {{item.userName}}<br>
+            1.Soru:
+            {{item.answers[0].answerId1}}<br>
+            2.Soru:
+            {{item.answers[0].answerId2}}<br>
+            3.Soru:
+            {{item.answers[0].answerId3}}
             
-                {{item.answers[0].answerId1}}
                      
         }
     </div>

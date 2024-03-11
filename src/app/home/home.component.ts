@@ -46,18 +46,18 @@ export class HomeComponent implements OnInit {
 
 
   submit() {
-    let answerModel = Object.assign({}, this.addForm.value);
-    console.log(answerModel);
-    //    if(this.addForm.valid){
-    //      let answerModel = Object.assign({}, this.addForm.value);
-    //      this.questionService.addAnswer(answerModel).subscribe(data=>{
-    //       console.log(data);
-    //        this.toastrService.success("Anket başarıyla tamamlandı");
-    //      });
-    // }
-    // else{
-    //   this.toastrService.error("Anketi doldurunuz");
-    // }
+    // let answerModel = Object.assign({}, this.addForm.value);
+    // console.log(answerModel);
+        if(this.addForm.valid){
+          let answerModel = Object.assign({}, this.addForm.value);
+          this.questionService.addAnswer(answerModel).subscribe(data=>{
+           console.log(data);
+            this.toastrService.success("Anket başarıyla tamamlandı");
+          });
+     }
+     else{
+       this.toastrService.error("Anketi doldurunuz");
+     }
   }
   //Soru Ayarları
   getQuestions() {
