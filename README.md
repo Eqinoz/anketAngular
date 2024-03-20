@@ -1,3 +1,6 @@
+# API
+data.json Dosyasını localhost:3000 de çalıştırılsanız veri gönderme ve alma işlemlerini yapabilirsiniz.
+
 # Anket
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.

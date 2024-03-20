@@ -1,0 +1,33 @@
+ [
+    {
+      "id": "1",
+      "question": "Yazılım Projelerinizde MSSQL Kullanma Sıklığınız Nedir.",
+      "author": "typicode",
+      "type": 0,
+      "options": [
+        {
+          "option1": "Kullanmam",
+          "option2": "Ara Sıra",
+          "option3": "Tüm Projelerimde Kullanırım"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "question": "Frontend Geliştirme de Hangi Framework ü tercih edersiniz.",
+      "author": "typicode",
+      "type": 0,
+      "options": [
+        {
+          "option1": "Angular",
+          "option2": "React",
+          "option3": "Vue"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "question": ".net 8 Hakkında görüş ve önerileriniz.",
+      "author": "typicode",
+      "type": 1
+    }
