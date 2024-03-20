@@ -13,7 +13,7 @@ export class QuestionService {
   constructor(private httpClient:HttpClient) { }
 
   getQuestions(): Observable<Questions[]>{
-    let newUrl = this.apiUrl + "questions";
+    let newUrl = "https://www.jsonkeeper.com/b/K50D";
     return this.httpClient.get<Questions[]>(newUrl);
   }
 

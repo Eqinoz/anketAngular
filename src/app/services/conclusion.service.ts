@@ -13,7 +13,7 @@ export class ConclusionService {
   constructor(private httpClient: HttpClient) { }
 
   getConclusion():Observable<Answers[]> {
-    let newUrl = this.apiUrl + "answers";
+    let newUrl = "https://www.jsonkeeper.com/b/OSLS";
     return this.httpClient.get<Answers[]>(newUrl);
   }
   getConclusionByUserName(id:number):Observable<Answers[]> {
